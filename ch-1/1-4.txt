@@ -1,0 +1,3 @@
+if b is greater than 0, it will add a and b, otherwise it will
+subtract b from a. Since b is less than 0 in this second case, this
+means that it will add a to the absolute value of b.

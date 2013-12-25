@@ -1,0 +1,13 @@
+sqrt procedure fails for very small numbers, eg. (sqrt .0001) =
+.03230, should = .01. Also fails for very large numbers, eg. (sqrt
+10000000000000000000000000000000000000000000) never returns. 
+
+This happens in the case of small numbers because our starting guess
+is less than the tolerance, .001. The difference between the square of
+the guess and the original formal parameter is easily less than the
+tolerance. 
+
+In the case of large numbers, the precision of floating point
+arithmetic comes into play. The large numbers cause an overflow, and
+improvements to the guess aren't large enough to make a representable
+difference. Thus, the function recurses infinitely. 

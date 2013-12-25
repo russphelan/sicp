@@ -1,0 +1,3 @@
+Since we are passing these expressions in as formal parameters of
+new-if, they are evaluated before new-if is applied to them. This
+results in the sqrt-iter loop recursing indefinitely. 

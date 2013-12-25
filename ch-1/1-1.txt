@@ -1,0 +1,13 @@
+10 
+12
+8
+3
+6
+prints nothing, assignment of var
+prints nothing, assignment of var
+19
+#f, token for false
+4
+16
+6
+16
